@@ -19,17 +19,17 @@ Maven project with:
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-checkstyle-plugin</artifactId>
-    <version>3.1.2</version>
+    <version>3.2.1</version>
     <dependencies>
         <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>9.2</version>
+            <version>10.9.0</version>
         </dependency>
         <dependency>
-          <groupId>???</groupId>
-          <artifactId>???</artifactId>
-          <version>???</version>
+          <groupId>ru.yurkinsworkshop</groupId>
+          <artifactId>checkstyle</artifactId>
+          <version>1.1</version>
         </dependency>
     </dependencies>
     <configuration>
@@ -55,8 +55,8 @@ Now, checkstyle will be included in your validation step, which is almost every 
 Try
 ```mvn compile```, you should see checkstyle triggered along compilation:
 ```
-[INFO] --- maven-checkstyle-plugin:3.1.2:check (validate) @ ${project name} ---
+[INFO] --- maven-checkstyle-plugin:3.2.1:check (validate) @ ${project name} ---
 ```
 
-* Import IntelliJIdea_checkstyle.xml as a scheme inside IntelliJ: Settings -> Editor -> Java -> Scheme -> Import Scheme
+* Import IntelliJIdea_checkstyle.xml as a scheme inside IntelliJ: Settings -> Editor -> Code Style -> Java -> Scheme -> Import Scheme
   -> IntelliJ IDEA Code style XML. Now you can select src project folder and trigger reformat code.
